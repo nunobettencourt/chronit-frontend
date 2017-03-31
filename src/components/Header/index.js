@@ -19,6 +19,12 @@ export class Header extends Component {
                             <li>
                                 <Link to="/about" activeClassName="active">About</Link>
                             </li>
+                            <li>
+                                <Link to="/event" activeClassName="active">Event</Link>
+                            </li>
+                            <li>
+                                <Link to="/map" activeClassName="active">Map</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -1,8 +1,8 @@
 {
-  "name": "simple-redux-boilerplate",
-  "title": "Simple Redux Boilerplate",
+  "name": "chronit-frontend",
+  "title": "Chronit Frontend",
   "version": "1.0.0",
-  "description": "Simple Redux Boilerplate",
+  "description": "Racing Events Management Platform",
   "scripts": {
     "clean": "rimraf dist",
     "build": "webpack --progress --verbose --colors --display-error-details --config webpack/common.config.js",
@@ -13,16 +13,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mitchbox/simple-redux-boilerplate.git"
+    "url": "https://github.com/nunobettencourt/chronit-frontend.git"
   },
-  "homepage": "https://github.com/mitchbox/simple-redux-boilerplate",
-  "bugs": "https://github.com/mitchbox/simple-redux-boilerplate/issues",
+  "homepage": "https://github.com/nunobettencourt/chronit-frontend",
+  "bugs": "https://github.com/nunobettencourt/chronit-frontend/issues",
   "keywords": [
-    "react", "reactjs", "redux", "boilerplate", "webpack"
+    "react",
+    "reactjs",
+    "redux",
+    "boilerplate",
+    "webpack"
   ],
   "license": "MIT",
   "authors": [
-    "Mitch Chen (https://github.com/mitchbox)"
+    "Nuno Bettencourt (https://github.com/nunobettencourt)"
   ],
   "devDependencies": {
     "autoprefixer": "6.3.1",
@@ -86,6 +90,7 @@
   },
   "dependencies": {
     "antd": "^0.12.7",
+    "axios": "^0.15.3",
     "bootstrap": "^3.3.5",
     "jquery": "^2.2.0",
     "react": "^0.14.6",

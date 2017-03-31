@@ -16,7 +16,7 @@ Simple Redux Boilerplate
 ### Installation
 
 ```
-$ git clone https://github.com/mitchbox/simple-redux-boilerplate.git
+$ git clone https://github.com/nunobettencourt/chronit-frontend.git
 $ cd your-app-name
 $ npm install
 ```
@@ -25,7 +25,7 @@ $ npm install
 
 ```
 $ npm run start
-open http://localhost:3000
+open http://localhost:5000
 ```
 
 ### Production
