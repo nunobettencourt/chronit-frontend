@@ -1,4 +1,4 @@
-Simple Redux Boilerplate
+Chronit Frontend
 =====================
 
 ### Stack
