@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import eventListItem from 'components/eventListItem';
+import EventListItem from 'components/EventListItem';
 
 class EventList extends Component {
 
@@ -19,11 +19,8 @@ class EventList extends Component {
 			}
 
 			return event.eventList.map((event) => {
-
-				console.log('event', event.reference);
-
 				return (
-					<eventListItem key={event.id} {...event} />
+					<EventListItem key={event.id} {...event} />
 				);
 			});
 		};
