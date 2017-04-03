@@ -7,10 +7,10 @@ export function startEventListFetch() {
 	};
 };
 
-export function completeEventListFetch(events) {
+export function completeEventListFetch(eventList) {
 	return {
 		type: Type.COMPLETE_EVENT_LIST_FETCH,
-		events
+		eventList
 	};
 };
 
@@ -19,8 +19,8 @@ export function fetchEventList() {
 		startEventListFetch();
 
 		axios.get('http://localhost:3000/events').then(function (res) {
-			var events = res.data;
-			dispatch(completeEventListFetch(events));
+			var eventList = res.data;
+			dispatch(completeEventListFetch(eventList));
 		}).catch( function(err) {
 			console.log(err);
 		});

@@ -13,7 +13,7 @@ const metaData = {
 
 @connect(
 	state => ({
-		events: state.events
+		event: state.event
 	}),
 	dispatch => bindActionCreators(EventActions, dispatch)
 )

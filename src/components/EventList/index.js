@@ -8,11 +8,11 @@ class EventList extends Component {
 	}
 
 	render() {
-		const { events } = this.props;
+		const { eventList } = this.props;
 		return (
 			<div className="panel panel-default">
 				<div className="panel-body">
-					<p>Clicked: <span className="badge">{events}</span> times</p>
+					<p>Clicked: <span className="badge">{eventList}</span> times</p>
 				</div>
 			</div>
 		);
