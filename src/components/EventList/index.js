@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import eventListItem from 'components/eventListItem';
 
 class EventList extends Component {
 
@@ -9,10 +10,24 @@ class EventList extends Component {
 
 	render() {
 		const { eventList } = this.props;
+		var renderEventList = () => {
+			if(eventList.length === 0) {
+				return (
+					<p>No events to display</p>
+				);
+			}
+
+			return eventList.map((event) => {
+				return (
+					<eventListItem key={event.id} {...event} />
+				);
+			});
+		};
+
 		return (
 			<div className="panel panel-default">
 				<div className="panel-body">
-					<p>Clicked: <span className="badge">{eventList}</span> times</p>
+					{renderEventList()}
 				</div>
 			</div>
 		);
