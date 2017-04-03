@@ -9,15 +9,19 @@ class EventList extends Component {
 	}
 
 	render() {
-		const { eventList } = this.props;
+		const { event } = this.props;
+
 		var renderEventList = () => {
-			if(eventList.length === 0) {
+			if(event.eventList.length === 0) {
 				return (
 					<p>No events to display</p>
 				);
 			}
 
-			return eventList.map((event) => {
+			return event.eventList.map((event) => {
+
+				console.log('event', event.reference);
+
 				return (
 					<eventListItem key={event.id} {...event} />
 				);
