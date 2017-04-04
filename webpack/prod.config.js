@@ -6,8 +6,6 @@ const pkg = require('../package.json');
 module.exports = {
   devtool: 'source-map',
 
-  entry: ['bootstrap-loader/extractStyles'],
-
   output: {
     publicPath: '',
   },
