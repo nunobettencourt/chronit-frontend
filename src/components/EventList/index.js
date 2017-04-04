@@ -12,7 +12,11 @@ class EventList extends Component {
 		const { event } = this.props;
 
 		var renderEventList = () => {
-			if(event.eventList.length === 0) {
+			if (typeof event.eventList == 'undefined') {
+				return (
+					console.log('loading events')
+				);
+			} else if (event.eventList.length === 0) {
 				return (
 					<p>No events to display</p>
 				);
@@ -27,9 +31,19 @@ class EventList extends Component {
 
 		return (
 			<div className="panel panel-default">
-				<div className="panel-body">
+				<div className="panel-heading">Events</div>
+				<table className="table table-hover">
+					<thead>
+						<tr>
+							<th>Event</th>
+							<th>Starts</th>
+							<th>Ends</th>
+						</tr>
+					</thead>
+					<tbody>
 					{renderEventList()}
-				</div>
+					</tbody>
+				</table>
 			</div>
 		);
 	}

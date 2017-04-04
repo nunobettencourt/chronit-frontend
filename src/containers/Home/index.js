@@ -5,7 +5,7 @@ import DocumentMeta from 'react-document-meta';
 import { HomeSection } from 'components/HomeSection';
 
 const metaData = {
-    title: 'Simple Redux Boilerplate',
+    title: 'Home page',
     description: '',
     canonical: '',
     meta: {

@@ -2,12 +2,14 @@ import React, { Component, PropTypes } from 'react';
 
 class EventListItem extends Component {
 	render() {
-		var {reference} = this.props;
+		var {reference, time_start, time_end} = this.props;
 
 		return (
-			<div>
-				<p>{reference}</p>
-			</div>
+			<tr>
+				<td>{reference}</td>
+				<td>{time_start}</td>
+				<td>{time_end}</td>
+			</tr>
 		)
 	}
 }

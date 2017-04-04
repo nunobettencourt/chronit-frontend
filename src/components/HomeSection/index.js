@@ -9,7 +9,7 @@ export class HomeSection extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div>
                 <div className="jumbotron">
                     <h2>Home Page</h2>
                 </div>
